@@ -49,10 +49,10 @@ public class Drivetrain {
   }
 
   public void periodic() {
-    Shuffleboard.getTab("Encoders").addBoolean("Direction",() -> m_frontLeft.getDirection());
-    Shuffleboard.getTab("Encoders").addBoolean("Direction",() -> m_frontRight.getDirection());
-    Shuffleboard.getTab("Encoders").addBoolean("Direction",() -> m_backLeft.getDirection());
-    Shuffleboard.getTab("Encoders").addBoolean("Direction",() -> m_backRight.getDirection());
+    Shuffleboard.getTab("Encoders").addBoolean("DirectionFL",() -> m_frontLeft.getDirection());
+    Shuffleboard.getTab("Encoders").addBoolean("DirectionFR",() -> m_frontRight.getDirection());
+    Shuffleboard.getTab("Encoders").addBoolean("DirectionBL",() -> m_backLeft.getDirection());
+    Shuffleboard.getTab("Encoders").addBoolean("DirectionBR",() -> m_backRight.getDirection());
 
 
     SmartDashboard.putNumber("Front Left Distance", m_frontLeft.getDistance());

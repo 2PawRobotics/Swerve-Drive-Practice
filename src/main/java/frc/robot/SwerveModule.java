@@ -137,5 +137,11 @@ public class SwerveModule {
 
     m_driveMotor.setVoltage(driveOutput + driveFeedforward);
     m_turningMotor.setVoltage(turnOutput + turnFeedforward);
+
+    System.out.println(m_magEncoder.getRaw());
+    System.out.println("run once or multiple times");
+    
   }
+
+
 }
